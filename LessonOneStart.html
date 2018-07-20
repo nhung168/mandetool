@@ -5,7 +5,6 @@
 	<title>Tableau 8.0 JavaScript API On-Demand Tutorial Example</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href="bootstrap.css" rel="stylesheet" media="screen">
-	<!-- <script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/tableau_v8.debug.js"></script> -->
 </head>
 <body>
 	<div class='container'>
@@ -25,6 +24,13 @@
 			</ul>
 			<div id='viz'></div>
 			<script>
+				var vizDiv = document.getElementbyID('viz');
+				var vizURL = "https://public.tableau.com/shared/9X7YWXMMH?:display_count=yes"
+				var options = (
+					width: '600px'
+					height: '540px');
+				viz = new tableauSoftware.Viz(vizDiv,vizURL,options);
+
 			</script>
 			
 			

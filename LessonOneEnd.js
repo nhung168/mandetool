@@ -6,7 +6,7 @@ var viz, workbook;
 
 window.onload=function() {
 	var vizDiv = document.getElementById('viz');
-	var vizURL = 'http://public.tableausoftware.com/views/Presents/TreeMap';
+	var vizURL = 'https://public.tableau.com/views/Demo-THX/Dashboard1?:embed=y&:display_count=yes&publish=yes';
 	var options = {
 		width: '600px',
 		height: '540px',
