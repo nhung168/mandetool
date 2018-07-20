@@ -1,15 +1,9 @@
-function initializeViz() {
-  var placeholderDiv = document.getElementById("tableauViz");
-  var url = "https://public.tableau.com/views/Demo-THX/Dashboard1?:embed=y&:display_count=yes&publish=yes";
+window.onload = function () {
+  var vizDiv = document.getElementByID('viz');
+  var vizURL = "https://public.tableau.com/shared/JJ2JNPJWP?:display_count=yes";
   var options = {
-    width: placeholderDiv.offsetWidth,
-    height: placeholderDiv.offsetHeight,
-    hideTabs: true,
-    hideToolbar: true,
-    onFirstInteractive: function () {
-      workbook = viz.getWorkbook();
-      activeSheet = workbook.getActiveSheet();
-    }
-  };
-  viz = new tableau.Viz(placeholderDiv, url, options);
+       width : '600px',
+       height: '540px',
+        };
+   viz = new tableaauSoftware.Viz(vizDiv, vizURL, options);
 }   
